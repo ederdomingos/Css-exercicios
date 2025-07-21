@@ -1,0 +1,166 @@
+/* ========================================
+   ESTILOS PARA PÁGINA DE NOTÍCIA
+   ======================================== */
+
+/* Reset e configurações base */
+* {
+  box-sizing: border-box;
+}
+
+/* Configurações gerais do corpo da página */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 2rem;
+  color: #222;
+  background-color: #fff;
+}
+
+/* ========================================
+   TIPOGRAFIA E ELEMENTOS DE TEXTO
+   ======================================== */
+
+/* Títulos principais */
+h1, h2 {
+  margin-bottom: 0.5rem;
+  color: #222;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-top: 2rem;
+}
+
+/* Parágrafos dentro de artigos */
+article p {
+  margin: 1rem 0;
+  text-align: justify;
+}
+
+/* Parágrafo imediatamente após h1 ganha destaque */
+h1 + p {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+/* ========================================
+   LINKS E ELEMENTOS INTERATIVOS
+   ======================================== */
+
+/* Estilização de links */
+a {
+  color: red;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: lemonchiffon;
+  text-decoration: underline;
+}
+
+a:focus {
+  outline: 2px solid red;
+  outline-offset: 2px;
+}
+
+/* ========================================
+   CLASSES UTILITÁRIAS
+   ======================================== */
+
+/* Texto com destaque forte */
+.destaque-forte {
+  font-weight: bold;
+}
+
+/* Nome com destaque visual especial */
+.nome-destaque {
+  color: red;
+  font-weight: bold;
+}
+
+/* ========================================
+   LAYOUT E ESTRUTURA
+   ======================================== */
+
+/* Header da página */
+header {
+  margin-bottom: 2rem;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 1rem;
+}
+
+/* Conteúdo principal */
+main {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Artigo principal */
+article {
+  background-color: #fafafa;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer da página */
+footer {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid #eee;
+  text-align: center;
+}
+
+footer small {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+/* ========================================
+   RESPONSIVIDADE
+   ======================================== */
+
+/* Tablets e dispositivos médios */
+@media (max-width: 768px) {
+  body {
+    margin: 1rem;
+  }
+  
+  h1 {
+    font-size: 1.8rem;
+  }
+  
+  h2 {
+    font-size: 1.3rem;
+  }
+  
+  article {
+    padding: 1.5rem;
+  }
+}
+
+/* Dispositivos móveis */
+@media (max-width: 480px) {
+  body {
+    margin: 0.5rem;
+  }
+  
+  h1 {
+    font-size: 1.6rem;
+  }
+  
+  h2 {
+    font-size: 1.2rem;
+  }
+  
+  article {
+    padding: 1rem;
+  }
+}
+
